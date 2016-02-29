@@ -14,10 +14,6 @@ This lab will guide you through building a *BASIC* continuous delivery pipeline 
   
 . Login to your Jenkins instance at https://jenkins-0.cfpoc2.internal.t-mobile.com/ with the same username and password that you use for CloudFoundry.
 
-. Navigate to your username folder.
-
-. Click *Configure* and then *Credentials*, and enter your CloudFoundry credentials. Then click *Save*.
-
 
 == Create the Build Job
 
