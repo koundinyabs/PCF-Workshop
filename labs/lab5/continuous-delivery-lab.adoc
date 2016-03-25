@@ -42,6 +42,7 @@ This lab will guide you through building a *BASIC* continuous delivery pipeline 
 . On "Build Triggers", select "Build when a change is pushed to GitHub"
 
 == Execute Shell
+[source,bash]
 ----
 DEPLOYED_VERSION_CMD=$(CF_COLOR=false cf apps | grep 'mapUS.' | cut -d" " -f1)
 export BUILD_VERSION="1.2"
@@ -60,6 +61,7 @@ tar -zxvf ./cf.tgz
 ./cf login -u <user> -p <password> -o <org> -s <space>
 
 ./cf push -f manifest.yml 
+----
 
 
 == Execute Build Job
