@@ -1,10 +1,8 @@
 #!/usr/bin/python
 import sys, subprocess
 
-# Note these passwords wil change for each workshop
-
-DEFAULT_USER_PASSWORD="password"
-DEFAULT_ADMIN_PASSWORD="p@ssw0rd"
+DEFAULT_USER_PASSWORD="w0rksh0p"
+DEFAULT_ADMIN_PASSWORD="w0rksh0p"
 
 def setSpaceRole(email=None, org=None, space=None, role=None):
         if not space and not email and not org and not role:
@@ -36,7 +34,7 @@ def createOrg(org=None):
         if not org:
                 return False
         else:
-                cmd = "cf create-org %s -q runaway" % org
+                cmd = "cf create-org %s -q workshop-large" % org
                 execute(cmd)
         return True
 
@@ -69,6 +67,8 @@ if __name__=="__main__":
 	with open("admins.txt") as f:
                 for line in f:
                         email = line.strip()
+			if not email:
+				continue
                         createUser(email=email, password=DEFAULT_ADMIN_PASSWORD)
                         org_roles= ["OrgManager", "BillingManager", "OrgAuditor"]
                         for role in org_roles:
@@ -82,6 +82,8 @@ if __name__=="__main__":
 	with open("users.txt") as f:
 		for line in f:
 			email = line.strip()
+			if not email:
+				continue
 			space = email
 			try:
 				space = email.split("@")[0]
