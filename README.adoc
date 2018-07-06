@@ -10,7 +10,7 @@ This one day hands-on classroom style session will provide developers (and opera
 * Lab 1
 10:15 AM - 11:00 AM::
 * Session 2: _PCF Architecture & Operations_
-11:00 PM - 11:15 PM:
+11:00 PM - 11:15 PM::
 * Lab 2
 11:15 AM - 11:30 AM:: Break
 11:30 AM - 12:00 PM::
