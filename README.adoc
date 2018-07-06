@@ -15,7 +15,7 @@ This one day hands-on classroom style session will provide developers (and opera
 11:15 AM - 11:30 AM:: Break
 11:30 AM - 12:00 PM::
 * Session 3: _Leveraging the Pivotal Cloud Foundry Marketplace_
-12:00 PM - 12:30 PM:
+12:00 PM - 12:30 PM::
 * Lab 3
 12:30 PM - 1:00 PM:: Lunch
 1:00 PM - 2:00 PM::
