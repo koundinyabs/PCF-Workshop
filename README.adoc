@@ -24,9 +24,9 @@ This one day hands-on classroom style session will provide developers (and opera
 == Course Materials
 
 * Session 1: link:https://drive.google.com/open?id=1xsU9qEpY0HFQVVSvDwQNSN0uc1AMclf3rSePr12C-YE[Introduction: PCF Technical Overview]
-* Session 2: link:presentations/Session_2_Architecture_And_Operations.pptx[Pivotal Cloud Foundry Architecture and Operations]
-* Session 3: link:presentations/Session_3_Cloud_Native_Enterprise.pptx[The Cloud Native Enterprise]
-* Session 4: link:presentations/Session_4_Services_Overview.pptx[Pivotal Cloud Foundry Services]
+* Session 2: link:https://drive.google.com/open?id=1VfIKeerXPsJlxpHGsJZATCQf70Wdxj_-oWSUrl2nzpI[PCF Architecture and Operations]
+* Session 3: link:https://drive.google.com/open?id=10INraPqFE6aCFr3ijLspniKF1WMPkuIVz0NjupHNAiY[PCF Services]
+* Session 4: link:https://drive.google.com/open?id=1SLaME1_TzL5PmTcY022k1AqD54WnMlLUyTod8-dMAFA[PCF Cloud Native Approach]
 
 * Developer Workshop
 ** Pre-work
@@ -37,4 +37,3 @@ This one day hands-on classroom style session will provide developers (and opera
 ** link:labs/lab2/lab.adoc[Lab 2 - Binding to Cloud Foundry Services]
 ** link:labs/lab3/lab.adoc[Lab 3 - Operating Your Application]
 ** link:labs/lab4/lab.adoc[Lab 4 - Monitoring Your Application]
-** link:labs/lab5/continuous-delivery-lab.adoc[Advanced Lab - Jenkins Integration]
