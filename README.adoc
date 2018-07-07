@@ -23,7 +23,7 @@ This one day hands-on classroom style session will provide developers (and opera
 
 == Course Materials
 
-* Session 1: link:presentations/Session_1_Introduction.pptx[Introduction]
+* Session 1: link:https://drive.google.com/open?id=1xsU9qEpY0HFQVVSvDwQNSN0uc1AMclf3rSePr12C-YE[Introduction: PCF Technical Overview]
 * Session 2: link:presentations/Session_2_Architecture_And_Operations.pptx[Pivotal Cloud Foundry Architecture and Operations]
 * Session 3: link:presentations/Session_3_Cloud_Native_Enterprise.pptx[The Cloud Native Enterprise]
 * Session 4: link:presentations/Session_4_Services_Overview.pptx[Pivotal Cloud Foundry Services]
