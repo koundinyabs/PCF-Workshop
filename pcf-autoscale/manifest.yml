@@ -1,7 +1,6 @@
 ---
 applications:
 - name: scale-demo
+  random-route: true
   memory: 128M
   instances: 1
-  host: scale
-  path: .
