@@ -112,33 +112,36 @@ image::lab1.png[]
 
 == HTTP Routing
 
-There are two ways to discover what routes, or HTTP URLs, are ampped to an application
+There are two ways to discover what routes, or HTTP URLs, are mapped to an application
 The first is available via the CLI. Just type:
 
 ----
 $ cf app workshop
-Showing health and status for app workshop in org TELCO / space zwickey as azwickey@pivotal.io...
-OK
+Showing health and status for app workshop in org pivot-ksrinivasarao / space development as ksrinivasarao@pivotal.io...
 
-requested state: started
-instances: 3/3
-usage: 512M x 3 instances
-urls: workshop-leishmanial-preobligation.vert.fe.gopivotal.com
-last uploaded: Fri Sep 25 15:07:25 UTC 2015
-stack: cflinuxfs2
-buildpack: java-buildpack=v3.1.1-offline-https://github.com/cloudfoundry/java-buildpack#7a538fb java-main java-opts open-jdk-like-jre=1.8.0_51 open-jdk-like-memory-calculator=1.1.1_RELEASE spring-auto-reconfiguration=1.7.0_RELEASE
+name:                workshop
+requested state:     started
+instances:           1/1
+isolation segment:   main
+usage:               768M x 1 instances
+routes:              workshop-anxious-fox.pcfbeta.io
+last uploaded:       Mon 09 Jul 10:26:35 EDT 2018
+stack:               cflinuxfs2
+buildpack:           client-certificate-mapper=1.6.0_RELEASE container-security-provider=1.13.0_RELEASE
+                     java-buildpack=v4.12-offline-https://github.com/cloudfoundry/java-buildpack.git#5dca820 java-main java-opts
+                     java-security jvmkill-agent=1.12.0_RELEASE open-jdk-...
 
-     state     since                    cpu    memory           disk           details
-#0   running   2015-09-25 11:11:33 AM   0.1%   411.6M of 512M   151.6M of 1G
+     state     since                  cpu    memory           disk           details
+#0   running   2018-07-09T15:49:00Z   0.5%   284.3M of 768M   154.3M of 1G
 ----
 
-and you'll see the list of routes in the section that says _urls_.
+and you'll see the list of routes in the section that says _routes_.
 
 The second way is via the Apps Manager UI.  Click on the _Workshop_ application to view application details.  Select the _Routes_ tab to view a list of mapped routes:
 
 image::lab2.png[]
 
-. We can easily add an additional route by clicking on _+ Map a Route_ and supplying the new hostname:
+. We can easily add an additional route by clicking on _MAP A ROUTE_ and supplying the new hostname:
 +
 image::lab3.png[]
 
@@ -146,7 +149,7 @@ image::lab3.png[]
 +
 image::lab4.png[]
 
-. We can just as easily remove a route by clicking on _Unmap_ on the route you wish to remove.
+. We can just as easily remove a route by clicking on _Unmap (X icon)_ on the route you wish to remove.
 +
 image::lab5.png[]
 +
@@ -160,6 +163,6 @@ image::blue-green.png[]
 
 == Accessing Container Contents
 
-SSH into your app container via 'cf ssh APP_NAME' 
+SSH into your app container via 'cf ssh APP_NAME'
 
 Reference: https://docs.pivotal.io/pivotalcf/customizing/diego-ssh/access-apps.html
