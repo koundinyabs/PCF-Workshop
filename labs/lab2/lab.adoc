@@ -36,7 +36,7 @@ $ cf marketplace
 and you'll get a list of services, their available plans, and descriptions. On Pivotal Cloudfoundry, the ``free'' tier of plans is normally the first one listed.
 
 The second way is specific to Pivotal Cloudfoundry's Apps Manager UI.
-If you haven't already, login to it by visiting http://console.cfpoc2.internal.t-mobile.com
+If you haven't already, login to it by visiting https://console.<pcf-sub-domain>.com or https://apps.<pcf-sub-domain>.com
 
 Click on the ''Marketplace'' link:
 
@@ -71,26 +71,31 @@ In fact, our data is now being retrieved from that MySQL database!
 ----
 Bound Services:
 {
-   "p-mysql":[
-      {
-         "name":"adam-db",
-         "label":"p-mysql",
-         "tags":[
-            "mysql",
-            "relational"
-         ],
-         "plan":"100mb-dev",
-         "credentials":{
-            "hostname":"10.68.105.55",
-            "port":3306,
-            "name":"cf_226845a3_1982_44ac_92b9_4b149af56bbc",
-            "username":"n67hpBOnKlsPUjKn",
-            "password":"hUa4WSrq2hPtBsuk",
-            "uri":"mysql://n67hpBOnKlsPUjKn:hUa4WSrq2hPtBsuk@10.68.105.55:3306/cf_226845a3_1982_44ac_92b9_4b149af56bbc?reconnect=true",
-            "jdbcUrl":"jdbc:mysql://10.68.105.55:3306/cf_226845a3_1982_44ac_92b9_4b149af56bbc?user=n67hpBOnKlsPUjKn&password=hUa4WSrq2hPtBsuk"
-         }
-      }
-   ]
+  "p-mysql": [
+    {
+      "name": "ks-db",
+      "instance_name": "ks-db",
+      "binding_name": null,
+      "credentials": {
+        "hostname": "192.168.8.38",
+        "port": 3306,
+        "name": "cf_f31b0263_ee7a_4cc3_847d_9144fb1fdab0",
+        "username": "ZXTLVch61yN8dy5N",
+        "password": "E0h0ANtrUYVmSBuK",
+        "uri": "mysql://ZXTLVch61yN8dy5N:E0h0ANtrUYVmSBuK@192.168.8.38:3306/cf_f31b0263_ee7a_4cc3_847d_9144fb1fdab0?reconnect=true",
+        "jdbcUrl": "jdbc:mysql://192.168.8.38:3306/cf_f31b0263_ee7a_4cc3_847d_9144fb1fdab0?user=ZXTLVch61yN8dy5N&password=E0h0ANtrUYVmSBuK"
+      },
+      "syslog_drain_url": null,
+      "volume_mounts": [],
+      "label": "p-mysql",
+      "provider": null,
+      "plan": "100mb",
+      "tags": [
+        "mysql",
+        "relational"
+      ]
+    }
+  ]
 }
 ----
 
