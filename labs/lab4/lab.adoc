@@ -76,7 +76,7 @@ In this section, we'll drain logs to a very simple provider called https://paper
 +
 image::papertrail_1.png[]
 
-. Click on ``Heroku'':
+. Click on ``Cloud Foundry'':
 +
 image::papertrail_2.png[]
 
