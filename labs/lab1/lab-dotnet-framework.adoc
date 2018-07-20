@@ -13,7 +13,7 @@ $ cf api https://api.sys.gn01.pcf.dcsg.com --skip-ssl-validation
 . Login to Pivotal Cloud Foundry:
 +
 ----
-$ cf login
+$ cf login --sso
 ----
 +
 Follow the prompts
