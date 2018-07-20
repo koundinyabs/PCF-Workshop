@@ -26,7 +26,7 @@ $ cd $BOOTCAMP_HOME/..
 $ git clone https://github.com/mid-atlantic-pa/pcf-dotnet-environment-viewer.git
 ----
 
-Open the manifest.ymp file and append your name initials with the application name: <initials>-pcf-dotnet-workshop
+Open the manifest.yml file and append your name initials with the application name: <initials>-pcf-dotnet-workshop
 
 == Build the Sample Project
 
