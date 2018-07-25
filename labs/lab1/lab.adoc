@@ -24,6 +24,7 @@ Follow the prompts
 +
 ----
 $ cd $BOOTCAMP_HOME/cf-spring-mvc-boot
+Open the manifest.yml file and add your initials with the name: <initials>-workshop. Example sh-workshop
 ----
 
 . Push the application!
