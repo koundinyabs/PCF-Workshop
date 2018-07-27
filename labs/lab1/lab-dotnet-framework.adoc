@@ -22,14 +22,25 @@ If you don't have git installed and unable to access from CLI. Please go to belo
 https://github.com/mid-atlantic-pa/CfWorkshopDotNetCore.git
 ----
 
-Open the manifest.yml file and append your name initials with the application name: <initials>-cf-workshop-dotnet-core
+Open the manifest.yml file and append your name initials with the application name: <initials>-cf-workshop-dotnet-core and
+comment out the services attribute. Your manifest.yml should be like this:
+
+----
+---
+applications:
+- name: <initials>-cf-workshop-dotnet-core
+  env:
+    ASPNETCORE_ENVIRONMENT: development
+  #services:
+  #- cf-workshop-db
+----
 
 == Push It!
 
-. Change to the _pcf-dotnet-environment-viewer_ sample application directory:
+. Change to the _CfWorkshopDotNetCore_ sample application directory:
 +
 ----
-$ cd $BOOTCAMP_HOME/../pcf-dotnet-environment-viewer/ViewEnvironment
+$ cd $BOOTCAMP_HOME/../CfWorkshopDotNetCore
 ----
 
 . Push the application!
@@ -42,8 +53,7 @@ You should see output similar to the following listing. Take a look at the listi
 +
 ====
 ----
-Using manifest file C:\Users\VM User\dev\code\temp\pcf-dotnet-environment-viewer
-\ViewEnvironment\manifest.yml <1>
+Using manifest file C:\Users\VM User\dev\code\temp\CfWorkshopDotNetCore\manifest.yml <1>
 Getting app info...
 Creating app with these attributes...
 + name:       pcf-dotnet-environment-viewer
