@@ -48,9 +48,40 @@ image::lab2.png[]
 
 == Creating and Binding to a Service Instance
 
-. Let's begin by creating a MySQL service instance.
+Let's uncomment the code which we did in the previous lab:
+
+. Open the manifest.yml file remove the comments for the services attribute. Add initiats to cf-workshop-db.
+Your manifest.yml should be like this:
++
+----
+---
+applications:
+- name: <initials>-cf-workshop-dotnet-core
+  env:
+    ASPNETCORE_ENVIRONMENT: development
+  services:
+  - <initials>-cf-workshop-db
+----
+
+. Open the "Startup.cs" file from the root directory and remove the comment as per below line:
++
+----
+SeedData.Initialize(app.ApplicationServices);
+----
+
+. Navigate to Views/Shared/_Layout.cshtml and edit the file _Layout.cshtml.
+Remove comments for the header "Notes" as below
++
+----
+<li><a asp-controller="Notes" asp-action="Index">Notes</a></li>
+----
+
+Save all the files.
+
+. Now let's begin by creating a MySQL service instance.
 From the Apps Manager UI service marketplace, select _MySQL for Pivotal Cloudfoundry_, select the *10mb-dev plan*, and provide an instance name.
 In the drop-down list next to _Bind to App_ select your workshop application.
+Name the application <initials>-cfworkshop-db
 +
 image::lab3.png[]
 
