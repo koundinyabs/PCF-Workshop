@@ -2,36 +2,27 @@
 
 == Target
 
-. If you haven't already, download the latest release of the Cloud Foundry CLI from https://github.com/cloudfoundry/cli/releases for your operating system and install it.
-
-. Set the API target for the CLI: (set appropriate end point for your environment)
+. Make sure you are logged in to the environment. Run the below command to verify your org and space.
 +
 ----
-$ cf api https://api.sys.gn01.pcf.dcsg.com --skip-ssl-validation
+$ cf target
 ----
-
-. Login to Pivotal Cloud Foundry:
-+
-----
-$ cf login --sso
-----
-+
-Follow the prompts
 
 == Clone the Sample Project
 
-. Clone the .NET Framework _PCF DotNet Environment Viewer_ application
+. Clone the .NET Core application through the CLI
 ----
 $ cd $BOOTCAMP_HOME/..
-$ git clone https://github.com/mid-atlantic-pa/pcf-dotnet-environment-viewer.git
+$ git clone https://github.com/mid-atlantic-pa/CfWorkshopDotNetCore.git
 ----
 
-Open the manifest.yml file and append your name initials with the application name: <initials>-pcf-dotnet-workshop
+If you don't have git installed and unable to access from CLI. Please go to below repo and download the zip file from UI:
 
-== Build the Sample Project
+----
+https://github.com/mid-atlantic-pa/CfWorkshopDotNetCore.git
+----
 
-. Open the visual studio solution at $BOOTCAMP_HOME/../pcf-dotnet-environment-viewer/ViewEnvironment.sln
-. Choose Build -> Build Solution
+Open the manifest.yml file and append your name initials with the application name: <initials>-cf-workshop-dotnet-core
 
 == Push It!
 
