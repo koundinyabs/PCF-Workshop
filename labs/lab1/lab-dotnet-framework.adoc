@@ -36,7 +36,7 @@ applications:
   #- cf-workshop-db
 ----
 
-. Open the "Startup.cs" file from the root directory and comment out below line:
+. Open the "Startup.cs" file from the root directory and comment out the below line:
 +
 ----
 //SeedData.Initialize(app.ApplicationServices);
