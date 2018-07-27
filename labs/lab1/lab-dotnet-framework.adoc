@@ -11,20 +11,21 @@ $ cf target
 == Clone the Sample Project
 
 . Clone the .NET Core application through the CLI
++
 ----
 $ cd $BOOTCAMP_HOME/..
 $ git clone https://github.com/mid-atlantic-pa/CfWorkshopDotNetCore.git
 ----
 
 . If you don't have git installed and unable to access from CLI. Please go to below repo and download the zip file from UI:
-
++
 ----
 https://github.com/mid-atlantic-pa/CfWorkshopDotNetCore.git
 ----
 
 . Open the manifest.yml file and append your name initials with the application name: <initials>-cf-workshop-dotnet-core and
 comment out the services attribute. Your manifest.yml should be like this:
-
++
 ----
 ---
 applications:
@@ -36,12 +37,14 @@ applications:
 ----
 
 . Open the "Startup.cs" file from the root directory and comment out below line:
++
 ----
 //SeedData.Initialize(app.ApplicationServices);
 ----
 
 . Navigate to Views/Shared/_Layout.cshtml and edit the file _Layout.cshtml.
 Comment out the header "Notes" as below
++
 ----
 <!--<li><a asp-controller="Notes" asp-action="Index">Notes</a></li>-->
 ----
